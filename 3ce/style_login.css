@@ -1,0 +1,320 @@
+/*
+:root {
+}
+*/
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+
+  color: #a9a9a9;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+
+.ad {
+  width: 100%;
+  height: 43.5px;
+  background-color: black;
+}
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  color: #a9a9a9;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.icon i {
+  padding: 10px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.cate {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  font-size: 13px;
+
+  padding-bottom: 5px;
+}
+
+.cate #black {
+  display: flex;
+  justify-content: space-around;
+}
+
+#black li {
+  padding: 7px 10px;
+}
+
+.cate #gray {
+  display: flex;
+  justify-content: space-around;
+  color: #a9a9a9;
+}
+
+#gray li {
+  padding: 7px 10px;
+}
+
+/* footer */
+
+.footer1,
+.footer2 {
+  width: 100%;
+}
+
+.footer1-1 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px 0 30px 30px;
+  font-size: 12px;
+}
+
+.footer1-1 li {
+  margin: 0px 150px 0px 0px;
+}
+
+#border {
+  font-weight: bold;
+  margin: 0 0 30px;
+}
+
+.footer1-2-1 li {
+  margin: 0px 120px 0px 0px;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.footer2 i {
+  margin: 20px 10px;
+}
+.footer3-1,
+.footer3-2 {
+  color: #a9a9a9;
+  font-size: 12px;
+  margin: 30px;
+}
+
+.footer3-3 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  margin: 30px 0 20px 30px;
+}
+.footer3-3 li {
+  padding: 6px 0;
+}
+
+.sq {
+  border: 1px solid black;
+  margin: 5px 10px;
+  padding: 1px 8px 3px 8px;
+}
+
+/*  main */
+
+.mainAll {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+.sns {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.sns1 {
+  font-size: 14px;
+  color: #a9a9a9;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sns ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.sns li {
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.img {
+  margin: 20px 0;
+  padding: 30px;
+}
+
+#id {
+  margin: 10px 0;
+  line-height: 26px;
+
+  width: 600px;
+}
+
+.loginbutton1 {
+  width: 600px;
+}
+
+.loginbutton1 input {
+  width: 600px;
+  height: 48px;
+  border-radius: 0;
+  border: 1px solid black;
+  padding: 0 10px;
+}
+/* #id > input #log {
+  width: 100%;
+
+  height: 28px;
+
+  padding: 0 5px;
+  margin: 10px 0;
+  line-height: 26px;
+} */
+
+.logincheck {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.logintext2 i {
+  padding-right: 5px;
+  color: orange;
+}
+.logintext2 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  /* padding: 18px 0 9px 0; */
+}
+
+#logincheck2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.logintext1 {
+  border-top: 1px solid black;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+#id {
+  margin-top: 0;
+}
+#login {
+  text-align: center;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 999em;
+  height: 40px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.find ul {
+  padding: 0;
+  margin: 10 0;
+  display: flex;
+  justify-content: center;
+}
+.find li {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#a {
+  padding: 0 5px;
+}
+.member {
+  margin-top: 30px;
+}
+.member1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.member1-1-2 {
+  color: #a9a9a9;
+}
+
+.member1-1 {
+  width: 40%;
+}
+
+.member1-2 {
+  display: block;
+  width: 60%;
+}
+.member1-2a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.member1-2b {
+  display: block;
+}
+
+.memberi {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 22px 5px 0 0;
+}
+
+.memberi i {
+  padding: 1px;
+}
+
+#m {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 999em;
+  margin-top: 20px;
+  line-height: 36px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}

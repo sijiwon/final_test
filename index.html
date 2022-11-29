@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4cb43db3dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="img_slide.js"></script>
+    <script src="js/scroll.js"></script>
+
+    <title>기말 포트폴리오</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="name">시지원</div>
+        <div class="click">
+          <li><a href="#info" id="scroll_move1">소개</a></li>
+          <li><a href="#profil" id="scroll_move2">프로필</a></li>
+          <li><a href="#project" id="scroll_move3">작업물</a></li>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="infoprofil">
+        <section id="info">
+          <div class="main1">
+            <div class="Web" id="front">
+              <span>Web</span>
+              <div class="Web" id="back">
+                <span>Web</span>
+              </div>
+            </div>
+            <div class="publisher" id="front">
+              <span> Publisher</span>
+              <div class="publisher" id="back">
+                <span> Publisher</span>
+              </div>
+            </div>
+          </div>
+          <h1 class="typing"></h1>
+          <script src="js/typing.js"></script>
+        </section>
+        <section id="profil">
+          <div class="main2">
+            <div class="main2text">내 정보</div>
+            <div class="profilBox">
+              <div class="box1">
+                <li>이름: 시지원</li>
+                <li>생년월일: 2000.06.06</li>
+                <li>주소: 경기도 용인시 기흥구</li>
+              </div>
+              <div class="box2">
+                <li>2023.02 신구대학 IT소프트웨어학과 졸업</li>
+              </div>
+              <div class="box3">
+                <li>전화번호: 010-7567-3280</li>
+                <li>e-mail: tlwldnjs67@gmail.com</li>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="skill">
+        <div class="main3">
+          <li>
+            <img src="img/html.png" alt="" />
+            <div class="percent"><span>50%</span></div>
+            <div class="gauge1"></div>
+            <script src="js/gauge.js"></script>
+          </li>
+          <li>
+            <img src="img/css.png" alt="" />
+            <div class="percent"><span>50%</span></div>
+            <div class="gauge2"></div>
+          </li>
+          <li>
+            <img src="img/js.png" alt="" />
+            <div class="percent"><span>10%</span></div>
+            <div class="gauge3"></div>
+          </li>
+        </div>
+      </section>
+      <section id="project">
+        <div class="main4">
+          <div class="main4_textArea" id="front1">
+            <span> 작업물 </span>
+            <div class="main4_textArea" id="back1">
+              <span> 작업물 </span>
+            </div>
+          </div>
+
+          <div class="project_container">
+            <div class="album">
+              <div class="images">
+                <a href="3ce/index_main.html" class="frontimg"
+                  ><img src="img/3ce썸네일.jpg" />
+                  <div class="hover">
+                    <span>
+                      사이트:3ce 홈페이지 <br />
+                      제작기간: 2주 <br />
+                      color: #000000, #ffffff <br />
+                      화장품과 의류를 같이 판매하는 사이트이다보니까 주된
+                      메인컬러보단 <br />사이트 안에 화려한 컬러의 이미지를 삽입
+                      함으로써 화사한 느낌을 연출한것같았다.</span
+                    >
+                  </div>
+                </a>
+                <a href="youtube/index_main.html" class="frontimg"
+                  ><img src="img/youtube썸네일.jpg" />
+                  <div class="hover">
+                    <span>
+                      사이트:Youtube 홈페이지 <br />
+                      제작기간: 1주<br />color: #ffffff, #130a00, #ff0000 <br />
+                      유튜브 메인화면은 동영상 레이아웃의 반복이여서 만들기
+                      어려운건 아니였다. <br />
+                    </span></div
+                ></a>
+              </div>
+            </div>
+            <button class="previous">←</button>
+            <button class="next">→</button>
+          </div>
+          <script src="js/button.js"></script>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <li id="red">시지원</li>
+        <li id="pur">010-7567-3280</li>
+        <li id="gre">tlwldnjs67@gmail.com</li>
+      </div>
+    </footer>
+  </body>
+</html>
