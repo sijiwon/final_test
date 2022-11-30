@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/4cb43db3dc.js"
       crossorigin="anonymous"
@@ -20,6 +26,15 @@
     ></script>
     <script src="img_slide.js"></script>
     <script src="js/scroll.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("24rjdA8EDt4xutJvA");
+      })();
+    </script>
 
     <title>기말 포트폴리오</title>
   </head>
@@ -31,6 +46,7 @@
           <li><a href="#info" id="scroll_move1">소개</a></li>
           <li><a href="#profil" id="scroll_move2">프로필</a></li>
           <li><a href="#project" id="scroll_move3">작업물</a></li>
+          <li><a href="https://github.com/sijiwon">깃허브</a></li>
         </div>
       </div>
     </header>
@@ -38,21 +54,15 @@
       <div class="infoprofil">
         <section id="info">
           <div class="main1">
-            <div class="Web" id="front">
-              <span>Web</span>
-              <div class="Web" id="back">
-                <span>Web</span>
-              </div>
-            </div>
-            <div class="publisher" id="front">
-              <span> Publisher</span>
-              <div class="publisher" id="back">
-                <span> Publisher</span>
-              </div>
-            </div>
+            <div class="sqr1"></div>
+            <div class="sqr2"></div>
           </div>
-          <h1 class="typing"></h1>
+          <h1 class="text"></h1>
+          <p class="typing-txt">Web Publisher</p>
+          <p class="typing"></p>
+          <h1 class="typing1" id="hi"></h1>
           <script src="js/typing.js"></script>
+          <script src="js/typing1.js"></script>
         </section>
         <section id="profil">
           <div class="main2">
@@ -99,9 +109,6 @@
         <div class="main4">
           <div class="main4_textArea" id="front1">
             <span> 작업물 </span>
-            <div class="main4_textArea" id="back1">
-              <span> 작업물 </span>
-            </div>
           </div>
 
           <div class="project_container">
@@ -126,24 +133,118 @@
                     <span>
                       사이트:Youtube 홈페이지 <br />
                       제작기간: 1주<br />color: #ffffff, #130a00, #ff0000 <br />
-                      유튜브 메인화면은 동영상 레이아웃의 반복이여서 만들기
-                      어려운건 아니였다. <br />
+                      유튜브 메인화면은 동영상 영역의 반복이 많았고 마우스
+                      오버를 했을때 효과를 넣는게 많았다. <br />
                     </span></div
                 ></a>
               </div>
             </div>
             <button class="previous">←</button>
-            <button class="next">→</button>
+            <button class="next">→</button>+
           </div>
           <script src="js/button.js"></script>
         </div>
       </section>
+      <section id="Email">
+        <div class="about">
+          <div>
+            <div id="blank">
+              <li></li>
+              <li></li>
+              <li></li>
+            </div>
+            <!-- <h1>메일 보내는 폼</h1> -->
+            <div class="getintouch">
+              <div id="nname">
+                <p>이름</p>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="이름을 입력해주세요."
+                  class="inputbox_a"
+                  required
+                />
+              </div>
+              <div id="pphone">
+                <div>
+                  <p>연락처</p>
+                  <input
+                    type="text"
+                    id="phone"
+                    placeholder="생략하셔도됩니다."
+                    class="inputbox_a"
+                    required
+                  />
+                </div>
+              </div>
+              <div id="eemail">
+                <p>Email 주소</p>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="이메일을 입력해주세요."
+                  class="inputbox_a"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mmessage">
+              <p>내용</p>
+              <textarea
+                id="message"
+                type="text"
+                placeholder="소중한 의견을 들려주세요."
+                class="inputbox_b"
+                required
+              ></textarea>
+            </div>
+            <button type="button" id="submit" class="getintouch_btn">
+              보내기
+            </button>
+          </div>
+        </div>
+
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            emailjs.init("24rjdA8EDt4xutJvA");
+
+            $("#submit").click(function () {
+              var templateParams = {
+                //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
+                name: $("#name").val(),
+                phone: $("#phone").val(),
+                email: $("#email").val(),
+                message: $("#message").val(),
+              };
+
+              emailjs
+                .send("service_psmlqcl", "template_mh89cmi", templateParams)
+                //emailjs.send('service ID', 'template ID > emailjs 페이지에서 만든 템플릿에서 확인이 가능하다', 보낼 내용이 담긴 객체)
+                .then(
+                  function (response) {
+                    alert("메시지 전송이 완료되었습니다. 감사합니다.");
+                    window.location.reload();
+                  },
+                  function (error) {
+                    alert(
+                      "정상적인 제출이 이루어지지 않았습니다. 다시 시도해주세요!"
+                    );
+                  }
+                );
+            });
+          });
+        </script>
+      </section>
     </main>
     <footer>
       <div class="footer">
-        <li id="red">시지원</li>
-        <li id="pur">010-7567-3280</li>
-        <li id="gre">tlwldnjs67@gmail.com</li>
+        <li>시지원</li>
+        <li>010-7567-3280</li>
+        <li>tlwldnjs67@gmail.com</li>
       </div>
     </footer>
   </body>

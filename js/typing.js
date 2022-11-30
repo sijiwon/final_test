@@ -1,19 +1,27 @@
-"use strict";
-const content = "안녕하세요. 웹 퍼블리셔를 꿈꾸는 시지원입니다.";
-const text = document.querySelector(".typing");
-let index = 0;
+var typingBool = false;
+var typingIdx = 0;
 
-function sleep(delay) {
-  const start = new Date().getTime();
-  while (new Date().getTime() < start + delay);
+// 타이핑될 텍스트를 가져온다
+var typingTxt = $(".typing-txt").text();
+
+typingTxt = typingTxt.split(""); // 한글자씩 자른다.
+
+if (typingBool == false) {
+  // 타이핑이 진행되지 않았다면
+  typingBool = true;
+
+  var tyInt = setInterval(typing, 200); // 반복동작
 }
 
 function typing() {
-  text.textContent += content[index++];
-  if (index > content.length) {
-    text.textContent = "";
-    index = 0;
-    sleep(3000);
+  if (typingIdx < typingTxt.length) {
+    // 타이핑될 텍스트 길이만큼 반복
+    $(".typing").append(typingTxt[typingIdx]);
+    // 한글자씩 이어준다.
+    typingIdx++;
+  } else {
+    //끝나면 반복종료
+    clearInterval(tyInt);
   }
 }
 setInterval(typing, 200);
