@@ -78,7 +78,7 @@ header {
 .main1 {
   height: 420px;
 
-  margin-left: 200px;
+  margin: 0 200px;
   padding: 20px 40px;
 }
 
@@ -146,19 +146,6 @@ p.typing-txt {
     border-right: 1px solid #fff;
   }
 }
-/* 
-.typing2 {
-  display: inline;
-  vertical-align: middle;
-  border-right: 0.05em solid white;
-  animation: cursor 0.2s ease infinite;
-  color: #000000;
-  margin-left: 50px;
-  position: absolute;
-  top: 200px;
-  margin-left: 400px;
-  font-size: 50px;
-} */
 
 #front {
   width: auto;
@@ -188,8 +175,8 @@ p.typing-txt {
 
 .main2text {
   padding-top: 10px;
-  padding-left: 30px;
-  margin-left: 370px;
+  padding: 0 30px;
+  margin: 0 370px;
   margin-bottom: 5px;
   color: #000000;
 }
@@ -205,7 +192,7 @@ p.typing-txt {
   border: solid 1px lightgrey;
   border-radius: 20px;
   padding: 20px;
-  margin-left: 370px;
+  margin: 0 370px;
 }
 .profilBox:hover {
   margin-left: 370px;
@@ -215,7 +202,7 @@ p.typing-txt {
 .main3 {
   display: flex;
   justify-content: space-between;
-  padding: 50px 200px;
+  padding: 50px 230px;
   background-color: #eeeeee;
   padding-bottom: 20px;
 }
