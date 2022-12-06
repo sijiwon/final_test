@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="1-1.css" />
+    <link rel="stylesheet" href="header.css" />
     <link
       rel="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -12,6 +13,8 @@
       src="https://kit.fontawesome.com/4cb43db3dc.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/js/readmore.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>무한도전</title>
   </head>
@@ -97,46 +100,162 @@
             <!-- 올리사람 등등 -->
             <div class="nonbox_uploader">
               <ul>
-                <!-- 이미지 채널이름 -->
-                <li>
-                  <!-- 채널이미지 -->
-                  <img
-                    src="https://yt3.ggpht.com/ytc/AMLnZu-ioPu7x4AFq7fFAY_-1Vcb8ygFGcuMoPYsUaI6qQ=s88-c-k-c0x00ffffff-no-rj"
-                    alt=""
-                  />
-                  <!-- 채널이름이랑 구독자수  -->
-                  <div class="channel">
-                    <!-- 채널이름 -->
-                    <div class="channel_title">오분순삭</div>
-                    <!-- 구독자수 -->
-                    <div class="channel_gudoc">구독자 140만명</div>
-                  </div>
-                </li>
-                <!-- 구독중 -->
-                <li>구독중</li>
-                <!-- 종 아이콘 -->
-                <li><i class="fa-regular fa-bell"></i></li>
-                <!-- 좋아요 버튼 -->
-                <li>
-                  <!-- 좋아요 아이콘 -->
-                  <div class="likeicon"></div>
-                  <!-- 좋아요 클릭 숫자 -->
-                  <div class="likeclick"></div>
-                </li>
-                <!-- 공유 -->
-                <li>
-                  <div class="shareicon">
-                    <i class="fas fa-light fa-share"></i>
-                  </div>
-                  <div class="share">공유</div>
-                </li>
-                <!-- ...아이콘 -->
-                <li><i class="fa-light fa-circle-ellipsis"></i></li>
+                <div class="left">
+                  <!-- 이미지 채널이름 -->
+                  <li>
+                    <!--  1 -->
+                    <!-- 채널이미지 -->
+                    <img
+                      src="https://yt3.ggpht.com/ytc/AMLnZu-ioPu7x4AFq7fFAY_-1Vcb8ygFGcuMoPYsUaI6qQ=s88-c-k-c0x00ffffff-no-rj"
+                      alt=""
+                    />
+                    <!-- 채널이름이랑 구독자수  -->
+                    <div class="channel">
+                      <!-- 채널이름 -->
+                      <div class="channel_title">오분순삭</div>
+                      <!-- 구독자수 -->
+                      <div class="channel_gudoc">구독자 140만명</div>
+                    </div>
+                  </li>
+
+                  <!-- 구독중 -->
+                  <li>
+                    <!--  2 -->
+                    
+                      <span>구독중</span>
+                    
+                    
+                  </li>
+                  <!-- 종 아이콘 -->
+                  <li>
+                    <!--  3 -->
+                    <i class="fas fa-thin fa-bell fa-lg"></i>
+                  </li>
+                </div>
+                <div class="right">
+                  <!-- 좋아요 버튼 -->
+                  <li>
+                    <!--  4 -->
+                    <!-- 좋아요 아이콘 -->
+                    <div class="likebutton">
+                      <div class="likeicon">
+                        <span>
+                          <i class="fas fa-thin fa-thumbs-up"></i> 2.4만
+                        </span>
+                      </div>
+                      <div class="hateicon">
+                        <i class="fas fa-light fa-thumbs-down"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- 공유 -->
+                  <li id="sh">
+                    <!--  5 -->
+                    <div class="shareicon">
+                      <i class="fas fa-light fa-share"></i>
+                    </div>
+                    <div class="share">공유</div>
+                  </li>
+                  <!-- ...아이콘 -->
+                  <li id="bu">
+                    <!--  6 -->
+                    <span>
+                      <i class="fa-solid fa-ellipsis-vertical"></i></i>
+                    </span>
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
           <!-- 더보기 칸 -->
-          <div class="box"></div>
+          <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+          <div ids="more">
+            <div id="aaa">
+            
+            <div style="display: inline-block;">조회수 <span id="bold">4,339,403</span>회  <span id="bold">2020. 11. 21.<br></span>
+              계속 나오는 애드리브~ <br>
+              *무한도전 다시 보기
+            </div>
+              <div id="openTitle" style="display: inline-block;">더보기</div>
+          
+            </div>
+            <div id="openTerms">
+              ✔옛능에서 관련 에피소드 더보기👇<br>
+              <span id="blue">https://youtu.be/RnKfb19iwiI<br>
+              https://youtu.be/kfjmLUcx-OQ<br>
+              https://youtu.be/AWd8VNd0l_Y<br></span>
+              
+              ✔ WAVVE : <br>
+              <span id="blue">https://www.wavve.com/player/vod.html...<br>
+              ✔ iMBC : <br>
+              http://playvod.imbc.com/Vod/VodPlay?b...<br></span>
+              ✔ 카카오페이지<br>
+              (2006년~2015년) : <span id="blue">https://page.kakao.com/home?seriesId=...<br></span>
+              (2015년~2018년) : <span id="blue">https://page.kakao.com/home?seriesId=...<br></span>
+              ✔ 네이버시리즈 <br>
+              (pc) : <span id="blue">https://series.naver.com/broadcasting...<br></span>
+              (moblie) : <span id="blue">https://series.naver.com/broadcasting...<br></span>
+              ✔ 왓챠플레이 : <span id="blue">https://play.watcha.net/search?q=%EB%... <br></span>
+              ✔ 곰TV : http://www.gomtv.com/622537<br></span>
+              <br>
+              <span id="blue">#오분순삭 #무한도전 #정준하<br></span>
+              
+            </div>
+          </div>
+
+          <script>
+          
+          $("#openTerms").hide();
+          
+          $( "#aaa" ).click(function() {  
+          
+            $( "#openTerms" ).slideToggle( "fast" ); 
+          
+            if(document.getElementById('openTitle').innerText=="더보기")
+          
+            {
+          
+              document.getElementById('openTitle').innerText="간략히";
+          
+            }
+          
+            else
+          
+            {
+          
+              document.getElementById('openTitle').innerText="더보기";
+          
+            }
+          
+          });
+          
+          </script>
+          <!-- <details class="box">
+            <summary>
+              조회수 <span id="border">4,338,818</span>회
+              <span id="border">2020. 11. 21. </span>계속 나오는 애드리브~
+            </summary>
+            <div class="more">
+              *무한도전 다시 보기 ✔옛능에서 관련 에피소드 더보기👇
+              https://youtu.be/RnKfb19iwiI https://youtu.be/kfjmLUcx-OQ
+              https://youtu.be/AWd8VNd0l_Y ✔ WAVVE :
+              https://www.wavve.com/player/vod.html... ✔ iMBC :
+              http://playvod.imbc.com/Vod/VodPlay?b... ✔ 카카오페이지
+            </div>
+          </details> -->
+        
+        </div>
+        <!-- 댓글창 -->
+        <div class="ments">
+          <div class="ments1">댓글 1,742개</div>
+          <div class="ments2">정렬기준</div>
+        </div>
+        <div class="profil">
+          <div class="cir"><span>지원</span></div>
+          <div class="input">
+            <input type="text" placeholder="댓글 추가...">
+            
+          </div>
         </div>
       </div>
       <div class="list">
@@ -158,45 +277,401 @@
         </div>
         <div class="videos">
           <ul>
-            <li>
-              <!-- 	썸네일 이미지 -->
-              <div class="img"></div>
-              <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
-              <div class="infoicon">
-                <!-- 제목, 업로드한 사람, 등등.. -->
-                <div class="info">
-                  <!-- 제목칸 -->
-                  <div class="title"></div>
-                  <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
-                  <div class="nontitle">
-                    <!-- 업로드한 사람 -->
-                    <div class="uploader"></div>
-                    <!-- 조회수, 올린시간 -->
-                    <div class="nonuploader">
-                      <!-- 조회수 -->
-                      <div class="views"></div>
-                      <!-- 올린시간 -->
-                      <div class="uptime"></div>
+            <div class="listvideo">
+              <!-- 1 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img">
+                  <img
+                    src="https://i.ytimg.com/vi/oIRWIlAXnVA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZnMucGekHi6R8Dq_WPde4SLRG6w"
+                    alt=""
+                    onmouseover='this.src="https://i.ytimg.com/an_webp/j7wzwALgY8A/mqdefault_6s.webp?du=3000&sqp=CIDYvJwG&rs=AOn4CLB-t0GVIBlMbbZ3tXyaVHcpzk-v-Q"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/oIRWIlAXnVA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZnMucGekHi6R8Dq_WPde4SLRG6w"'
+                  />
+                </div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">천둥소리에 귀가 없어지는 강아지</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">재롱잔치</div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>53만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 4주</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="icon"></div>
-              </div>
-              <div class="img"></div>
-              <div class="infoicon">
-                <div class="info">
-                  <div class="title"></div>
-                  <div class="nontitle">
-                    <div class="uploader"></div>
-                    <div class="nonuploader">
-                      <div class="views"></div>
-                      <div class="uptime"></div>
+                <div class="icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i></i>
+                </div>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!-- 2 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/8OvjErl0zIE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbRR5wAnkK1F5KGtM4jjrjP4e1-A" alt=""
+                  onmouseover='this.src="https://i.ytimg.com/an_webp/8OvjErl0zIE/mqdefault_6s.webp?du=3000&sqp=CNTWvJwG&rs=AOn4CLDVaUzQ5IvffNfld8genMvpLTVc8Q"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/8OvjErl0zIE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbRR5wAnkK1F5KGtM4jjrjP4e1-A"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">영하 10도에도 여배우들이 코트를 입을 수 있는 이유✔︎ 한겨울에 따뜻하고 날씬해 보이게 입는 비밀🤫</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        AliceFunk 앨리스펑크
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>5만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 3시간</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <div class="icon"></div>
                 </div>
-                <div class="icon"></div>
-              </div>
-            </li>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!-- 3 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/Vonb505nUR8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCFYQA8zrGGBzXiL93CwywLUf9sqQ" alt=""
+                  onmouseover='this.src="https://i.ytimg.com/an_webp/Vonb505nUR8/mqdefault_6s.webp?du=3000&sqp=CKXcvJwG&rs=AOn4CLA3lO6RADvMSye2fU8dLn44V542WA"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/Vonb505nUR8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCFYQA8zrGGBzXiL93CwywLUf9sqQ"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">＂가발 쓴 정준하＂ | 무한도전⏱오분순삭</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        오분순삭
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>657만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 9개월</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!-- 4 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/VMi7TqH7ABQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCl-KaWKMUcYdvKfeTHjwGjQDrMbQ" alt=""
+                  onmouseover='this.src="https://i.ytimg.com/an_webp/VMi7TqH7ABQ/mqdefault_6s.webp?du=3000&sqp=CLD4vJwG&rs=AOn4CLAlKYDMGzQ5GJD99vwYn6HS3XOUoQ"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/VMi7TqH7ABQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCl-KaWKMUcYdvKfeTHjwGjQDrMbQ"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">"안 돼~위험하다니까!"…아기 지켜준 고양이 / SBS</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        SBS 뉴스
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>261만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 1년</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!-- 5 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/TfTRv9n2Ptw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCoFtte-LIKim24TZZhuy3VkkuQoA" alt=""
+                  onmouseover='this.src="https://i.ytimg.com/an_webp/TfTRv9n2Ptw/mqdefault_6s.webp?du=3000&sqp=CPD7vJwG&rs=AOn4CLBUiAdBMoUllT4R9f7_5TAJalPDEA"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/TfTRv9n2Ptw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCoFtte-LIKim24TZZhuy3VkkuQoA"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">[🇦🇺VLOG] 조카들과 호주 시골 여행 브이로그 🌴</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        해쭈 [HAEJOO]
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>61만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 1년</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!-- 6 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/jnyVS2LmroM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBLUccWtYZGCcBLykPmcECvc_BWKA" alt=""
+                  onmouseover='this.src="https://i.ytimg.com/an_webp/jnyVS2LmroM/mqdefault_6s.webp?du=3000&sqp=CNbtvJwG&rs=AOn4CLAHAIKXb9i5Fuhye_e5pqTNpgcTnQ"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/jnyVS2LmroM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBLUccWtYZGCcBLykPmcECvc_BWKA"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">[#무한도전] 숙소에만 놔둬도 알아서 분량 뽑는 멤버들💖 알래스카/ 뉴욕/ 군산에 있는 무도 숙소에 구독자님들을 초대합니다.🎁 | 무한도전⏱오분순삭 MBC100320방송</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        오분순삭
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>16만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 3시간</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!--  -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/xNal-FUpk-o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3sMs9Akb_TGvLf3iIlBOvfMCTjQ" alt=""
+                  onmouseover='this.src="https://i.ytimg.com/an_webp/xNal-FUpk-o/mqdefault_6s.webp?du=3000&sqp=COr1vJwG&rs=AOn4CLBu8Z9Ma9NBJHlHpNF4XxmuB6L-Fg"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/xNal-FUpk-o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3sMs9Akb_TGvLf3iIlBOvfMCTjQ"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">얌마! 뒤로 오라고!🤬 답답함에 의한 급발진,,, 정준하 ⏳얌마타임⏳ | 무한도전⏱오분순삭 MBC090418방송</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        오분순삭
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>283만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 1년</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!-- 8 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/OlFYJAmhju4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8xIbe0Q6oeCaJ8V0VCQjcgF31vg" alt=""
+                  onmouseover='this.src="https://i.ytimg.com/an_webp/OlFYJAmhju4/mqdefault_6s.webp?du=3000&sqp=CPjlvJwG&rs=AOn4CLDzJFYblflqmYveVKE-hf28Sda9TA"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/OlFYJAmhju4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8xIbe0Q6oeCaJ8V0VCQjcgF31vg"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">꿀통에 말벌넣어서 말벌꿀 만들기</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        프응 TV
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>106만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 3개월</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!-- 9 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/6Cz19hMUiDs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPvgvwD9tN5ihLOtzCUj3tvxJJJA" alt=""
+                  onmouseover='this.src="https://i.ytimg.com/an_webp/6Cz19hMUiDs/mqdefault_6s.webp?du=3000&sqp=CMfwvJwG&rs=AOn4CLBy9T5KubT5rHq357tKCFL14RNZdw"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/6Cz19hMUiDs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPvgvwD9tN5ihLOtzCUj3tvxJJJA"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">처음으로 한국 할머니 할아버지와 잔디밭에서 뛰어놀며 행복해하는 체리</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        올리버쌤
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>197만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 1개월</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!-- 10 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/_QYa3icyqgw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCkzlKz9i0gmqwZeoSbshgCegweNw" alt=""
+                  onmouseover='this.src="https://i.ytimg.com/an_webp/_QYa3icyqgw/mqdefault_6s.webp?du=3000&sqp=CODrvJwG&rs=AOn4CLDGRv78GZGGNvnMFHNZ6kLmsZqOhg"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/_QYa3icyqgw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCkzlKz9i0gmqwZeoSbshgCegweNw"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">하도 광고가 많아서 찐리뷰 해봤습니다</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        떡볶퀸 Tteokbokqueen
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>45만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 2주</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </li>
+            </div>
+
           </ul>
         </div>
       </div>
