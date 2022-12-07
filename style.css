@@ -171,16 +171,28 @@ p.typing-txt {
 
 .main2 {
   height: auto;
-  width: 100%;
+
   padding: 40px 0;
 }
 
 .main2text {
   padding-top: 10px;
   padding: 0 30px;
-  margin: 0 370px;
+
   margin-bottom: 5px;
   color: #000000;
+}
+
+#profil {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.proimg img {
+  width: 250px;
+  height: 300px;
+  margin: 20px 60px 0 200px;
+  border-radius: 10%;
 }
 .profilBox {
   width: 40vw;
@@ -194,10 +206,8 @@ p.typing-txt {
   border: solid 1px lightgrey;
   border-radius: 20px;
   padding: 20px;
-  margin: 0 370px;
 }
 .profilBox:hover {
-  margin-left: 370px;
   transform: scale(1.2);
 }
 
@@ -284,7 +294,8 @@ li img {
   border-radius: 20px;
   height: auto;
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .images {
   position: relative;
@@ -297,17 +308,17 @@ li img {
   border-radius: 20px;
 }
 .images a:hover img {
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 
 .images a:hover .hover {
   display: block;
-  background-color: rgba(0, 0, 0, 0.644);
-  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.708);
+  width: 100vw;
 
-  height: 580px;
+  padding: 60px 60px;
+  height: 100vh;
   opacity: 1;
-  padding: 20px;
 }
 
 img {
@@ -321,8 +332,9 @@ img {
 .hover {
   color: white;
   position: absolute;
-  top: 0px;
-  left: 0px;
+
+  top: -30px;
+  left: -30px;
   display: none;
   opacity: 0;
   transition: opacity 0.5s linear;
