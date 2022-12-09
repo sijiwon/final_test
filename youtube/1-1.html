@@ -15,8 +15,10 @@
     ></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/js/readmore.min.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>무한도전</title>
+    <link rel="icon" href="/img/youtube-removebg-preview (1).png">
   </head>
   <body>
     <header>
@@ -26,14 +28,18 @@
             <i class="fas fa-thin fa-bars"></i>
           </div>
           <div class="header_left_logo">
-            <div class="header_left_logo_icon">
-              <i class="fa-brands fa-youtube fa-2x"></i>
-            </div>
-            <div class="header_left_textBox">
-              <div id="pre">Premium</div>
-              <div id="kr">KR</div>
-            </div>
+            
+              <div class="header_left_logo_icon">
+                <a href="index.html">
+                <i class="fa-brands fa-youtube fa-2x"></i>
+              </div>
+              <div class="header_left_textBox">
+                <div id="pre">Premium</div>
+                <div id="kr">KR</div>
+              </div>
+            </a>
           </div>
+          
         </div>
         <div class="header_center">
           <div class="header_center_box">
@@ -47,15 +53,18 @@
             />
 
             <div class="header_center_box_right">
+              
               <div class="header_center_box_right_icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
             </div>
+            <div class="text1">검색</div>
           </div>
           <div class="header_center_mike">
             <div class="header_center_mike_logo">
               <i class="fa-solid fa-microphone"></i>
             </div>
+            <div class="text2">음성으로 검색</div>
           </div>
         </div>
         <div class="header_right">
@@ -65,6 +74,7 @@
                 <i class="fa-solid fa-video"></i>
               </div>
             </div>
+            <div class="text3">만들기</div>
           </li>
           <li>
             <div class="header_right_notice">
@@ -73,6 +83,7 @@
               </div>
               <div class="header_right_notice_icon2"></div>
             </div>
+            <div class="text4">알림</div>
           </li>
           <li>
             <div class="header_right_profil">
@@ -87,7 +98,8 @@
     <main>
       <div class="main">
         <!-- 비디오 영역 -->
-        <video controls src="https://youtu.be/MIOdpiWRhYg"></video>
+        <iframe width="100%" height="450"
+        src="https://www.youtube.com/embed/MIOdpiWRhYg?autoplay=1&mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- 비디오 밑에 정보 -->
         <div class="maininfo">
           <!-- 제목이랑 올린사람 등등.. -->
@@ -113,6 +125,7 @@
                     <div class="channel">
                       <!-- 채널이름 -->
                       <div class="channel_title">오분순삭</div>
+                      <div class="text6">오분순삭</div>
                       <!-- 구독자수 -->
                       <div class="channel_gudoc">구독자 140만명</div>
                     </div>
@@ -143,9 +156,11 @@
                           <i class="fas fa-thin fa-thumbs-up"></i> 2.4만
                         </span>
                       </div>
+                      <div class="text7">이 동영상이 마음에 듭니다.</div>
                       <div class="hateicon">
                         <i class="fas fa-light fa-thumbs-down"></i>
                       </div>
+                      <div class="text8">이 동영상이 마음에 들지 않습니다.</div>
                     </div>
                   </li>
                   <!-- 공유 -->
@@ -155,12 +170,13 @@
                       <i class="fas fa-light fa-share"></i>
                     </div>
                     <div class="share">공유</div>
+                    <div class="text9">공유</div>
                   </li>
                   <!-- ...아이콘 -->
                   <li id="bu">
                     <!--  6 -->
                     <span>
-                      <i class="fa-solid fa-ellipsis-vertical"></i></i>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
                     </span>
                   </li>
                 </div>
@@ -168,7 +184,7 @@
             </div>
           </div>
           <!-- 더보기 칸 -->
-          <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+          
           <div ids="more">
             <div id="aaa">
             
@@ -196,7 +212,7 @@
               (pc) : <span id="blue">https://series.naver.com/broadcasting...<br></span>
               (moblie) : <span id="blue">https://series.naver.com/broadcasting...<br></span>
               ✔ 왓챠플레이 : <span id="blue">https://play.watcha.net/search?q=%EB%... <br></span>
-              ✔ 곰TV : http://www.gomtv.com/622537<br></span>
+              ✔ 곰TV : <span id="blue">http://www.gomtv.com/622537<br></span>
               <br>
               <span id="blue">#오분순삭 #무한도전 #정준하<br></span>
               
@@ -230,19 +246,7 @@
           });
           
           </script>
-          <!-- <details class="box">
-            <summary>
-              조회수 <span id="border">4,338,818</span>회
-              <span id="border">2020. 11. 21. </span>계속 나오는 애드리브~
-            </summary>
-            <div class="more">
-              *무한도전 다시 보기 ✔옛능에서 관련 에피소드 더보기👇
-              https://youtu.be/RnKfb19iwiI https://youtu.be/kfjmLUcx-OQ
-              https://youtu.be/AWd8VNd0l_Y ✔ WAVVE :
-              https://www.wavve.com/player/vod.html... ✔ iMBC :
-              http://playvod.imbc.com/Vod/VodPlay?b... ✔ 카카오페이지
-            </div>
-          </details> -->
+
         
         </div>
         <!-- 댓글창 -->
@@ -251,28 +255,304 @@
           <div class="ments2">정렬기준</div>
         </div>
         <div class="profil">
-          <div class="cir"><span>지원</span></div>
+          <div class="cir">
+            <div class="cir_span">
+              <span>지원</span></div>
+            </div>
+            
           <div class="input">
             <input type="text" placeholder="댓글 추가...">
-            
+          </div>
+          
+        </div>
+        <!-- 고정 있는댓글 대댓글있음---------------------- -->
+        <div class="coments">
+          <div class="coments_left">
+            <div class="mentpro">
+              <img src="https://yt3.ggpht.com/ytc/AMLnZu-ioPu7x4AFq7fFAY_-1Vcb8ygFGcuMoPYsUaI6qQ=s88-c-k-c0x00ffffff-no-rj" alt="">
+            </div>
+            <div class="coment">
+              <div class="gojung">
+                <span><i class="fas fa-light fa-thumbtack"></i></span>
+                <span>오분순삭님이 고정함</span>
+              </div>
+              <div class="uploader_time">
+                <div class="ment_uploader">오분순삭</div>
+                
+                <div class="uptime">2년전</div>
+              </div>
+              
+              <div class="that">존버는 여기 대댓으로 달아주세요!  ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+                <br>🖤무한도전 회차 정보 알리미🖤</div>
+              <div class="icon_box">
+                <span id="icon">
+                  <i class="fas fa-thin fa-thumbs-up"></i>
+                </span>
+                <span id="num">
+                  723
+                </span>
+                <span id="icon">
+                  <i class="fas fa-light fa-thumbs-down"></i>
+                </span>
+                <span>
+                  
+                </span>
+                <span id="ko">댓글</span>
+              </div>
+              <!-- 대댓글 --------------------------- -->
+                <div ids="more">
+                  <div id="aaa1">
+                    <div id="openTitle1" style="display: inline-block;"> ▼ 답글 2개</div>
+                
+                  </div>
+                  <!-- 대댓글 1 -->
+                  <div id="openTerms1">
+                    
+                    <div class="row">
+                      <div class="lleft">
+                        <div class="mentpro2">
+                      <img src="https://yt3.ggpht.com/ytc/AMLnZu8RdxcvE_v64nFASC33295WcDTHrW4BnkmspK-7=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                      </div>
+                      <div class="rright"><div class="uploader_time2">
+                      <div class="ment_uploader2">한종희</div>
+                      <div class="uptime2">2년전</div>
+                      </div>
+                      <div class="that">정준하가 유재석 놀리는 짤모음 (희귀) <br>
+                        저쪼아래 춤추면서 유재석 놀리는거 !</div>
+                      <div class="icon_box2">
+                      <span id="icon">
+                        <i class="fas fa-thin fa-thumbs-up"></i>
+                      </span>
+                      <span id="num">
+                        7
+                      </span>
+                      <span id="icon">
+                        <i class="fas fa-light fa-thumbs-down"></i>
+                      </span>
+                      <span>
+                        
+                      </span>
+                      <span id="ko">답글</span>
+                      </div>
+                      </div>
+                    </div>
+                    <!-- 대댓글 2 -->
+                    <div class="row">
+                      <div class="lleft">
+                        <div class="mentpro2">
+                      <img src="https://yt3.ggpht.com/ytc/AMLnZu9c14k7Hi6eIwceUJ32efAa55ZiYJBrou-m5TVVlg=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                      </div>
+                      <div class="rright"><div class="uploader_time2">
+                      <div class="ment_uploader2">이제원</div>
+                      <div class="uptime2">2년전</div>
+                      </div>
+                      <div class="that">정준하 야임마 모음 없나요?!</div>
+                      <div class="icon_box2">
+                      <span id="icon">
+                        <i class="fas fa-thin fa-thumbs-up"></i>
+                      </span>
+                      <span id="num">
+                        13
+                      </span>
+                      <span id="icon">
+                        <i class="fas fa-light fa-thumbs-down"></i>
+                      </span>
+                      <span>
+                        
+                      </span>
+                      <span id="ko">답글</span>
+                      </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                <script>
+                
+                $("#openTerms1").hide();
+                $( "#aaa1" ).click(function() {  
+                  $( "#openTerms1" ).slideToggle( "fast" ); 
+                  if(document.getElementById('openTitle1').innerText==" ▼ 답글 2개")
+                  {
+                    document.getElementById('openTitle1').innerText=" ▼ 답글 2개";
+                  }
+                  else
+                  {
+                    document.getElementById('openTitle1').innerText=" ▼ 답글 2개";
+                  }
+                
+                });
+                
+                </script>
+              </div>
+              
+            </div>
+          </div>
+          <div class="coments_right">
+            <div class="coments_right_icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          </div>
+        </div>
+
+        <!-- 고정 없는댓글  영어닉네임 수정있음---------------------- -->
+        <div class="coments">
+          <div class="coments_left">
+            <div class="mentpro">
+              <img src="https://yt3.ggpht.com/ytc/AMLnZu-FA39yhn05d7reGt82iKlH3rhXftNxL_7VP7koEw=s88-c-k-c0x00ffffff-no-rj" alt="">
+            </div>
+            <div class="coment">
+              
+              <div class="uploader_time">
+                <div class="ment_uploader3">iliiilllii</div>
+                <div class="uptime">2년전</div>
+                <div class="uptime1">(수정됨)</div>
+              </div>
+              <div class="that">하하가 웃는건 대부분 재밌음 ㅋㅋㅋㅋ</div>
+              <div class="icon_box">
+                <span id="icon">
+                  <i class="fas fa-thin fa-thumbs-up"></i>
+                </span>
+                <span id="num">
+                  723
+                </span>
+                <span id="icon">
+                  <i class="fas fa-light fa-thumbs-down"></i>
+                </span>
+                <span>
+                  
+                </span>
+                <span id="ko">댓글</span>
+              </div>
+              
+              
+            </div>
+          </div>
+          <div class="coments_right">
+            <div class="coments_right_icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+          </div>
+        </div>
+        <!-- 고정 없는댓글  한글닉네임---------------------- -->
+        <div class="coments">
+          <div class="coments_left">
+            <div class="mentpro">
+              <img src="https://yt3.ggpht.com/bSuvdfUbBe3khwir59Axt1A1KUS1BRzh8WnTt1g_BhYijDAnTrv6cazSAjIXP25cxMNU5vhI=s88-c-k-c0x00ffffff-no-rj" alt="">
+            </div>
+            <div class="coment">
+              
+              <div class="uploader_time">
+                <div class="ment_uploader2">김용욱</div>
+                <div class="uptime">2년전</div>
+                <!-- <div class="uptime1">(수정됨)</div> -->
+              </div>
+              <div class="that">
+                <span id="blue">6:22</span>
+                 여기서 정준하 표정이랑 비지엠이랑 너무 찰떡ㅋㅋㅋㅋㅋㅋ 그냥 너무 웃김ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+                </div>
+              <div class="icon_box">
+                <span id="icon">
+                  <i class="fas fa-thin fa-thumbs-up"></i>
+                </span>
+                <span id="num">
+                  723
+                </span>
+                <span id="icon">
+                  <i class="fas fa-light fa-thumbs-down"></i>
+                </span>
+                <span>
+                  
+                </span>
+                <span id="ko">댓글</span>
+              </div>
+              <!-- 대댓글 --------------------------- -->
+              <div id="more">
+                <div id="aaa2">
+                  <div id="openTitle2" style="display: inline-block;"> ▼ 답글 1개</div>
+              
+                </div>
+                <!-- 대댓글 1 -->
+                <div id="openTerms2">
+                  
+                  <!-- 대댓글 2 -->
+                  <div class="row">
+                    <div class="lleft">
+                      <div class="mentpro2">
+                    <img src="https://yt3.ggpht.com/ytc/AMLnZu_HHfKxaBdN7g75T0jhb8bfcnYC1gFPo-Ld3cX29g=s88-c-k-c0x00ffffff-no-rj" alt="">
+                      </div>
+                    </div>
+                    <div class="rright"><div class="uploader_time2">
+                    <div class="ment_uploader2">ㅇㅅㅇ</div>
+                    <div class="uptime2">2년전</div>
+                    </div>
+                    <div class="that">박명수가 인정하는게 너무 웃겨</div>
+                    <div class="icon_box2">
+                    <span id="icon">
+                      <i class="fas fa-thin fa-thumbs-up"></i>
+                    </span>
+                    <span id="num">
+                      8
+                    </span>
+                    <span id="icon">
+                      <i class="fas fa-light fa-thumbs-down"></i>
+                    </span>
+                    <span>
+                      
+                    </span>
+                    <span id="ko">답글</span>
+                    </div>
+                    </div>
+                  </div>
+
+                </div>
+                
+              <script>
+              
+              $("#openTerms2").hide();
+              $( "#aaa2" ).click(function() {  
+                $( "#openTerms2" ).slideToggle( "fast" ); 
+                if(document.getElementById('openTitle2').innerText==" ▼ 답글 1개")
+                {
+                  document.getElementById('openTitle2').innerText=" ▼ 답글 1개";
+                }
+                else
+                {
+                  document.getElementById('openTitle2').innerText=" ▼ 답글 1개";
+                }
+              
+              });
+              
+              </script>
+            </div>
+              
+              
+            </div>
+          </div>
+          <div class="coments_right">
+            <div class="coments_right_icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
           </div>
         </div>
       </div>
       <div class="list">
         <div class="tags">
           <ul>
-            <li id="first">
-              <div class="tagsTexts">모두</div>
-            </li>
-            <li>
-              <div class="tagsTexts">관련 콘텐츠</div>
-            </li>
-            <li>
-              <div class="tagsTexts">오분순삭 제공</div>
-            </li>
-            <li>
-              <div class="tagsTexts">실시간</div>
-            </li>
+            
+              <li id="first">
+                <div class="tagsTexts">모두</div>
+              </li>
+              <li>
+                <div class="tagsTexts">관련 콘텐츠</div>
+              </li>
+              <li>
+                <div class="tagsTexts">오분순삭 제공</div>
+              </li>
+              <li>
+                <div class="tagsTexts">실시간</div>
+              </li>
+              <li>
+                <div class="last">></div>
+              </li>
+            
+
           </ul>
         </div>
         <div class="videos">
@@ -285,7 +565,7 @@
                   <img
                     src="https://i.ytimg.com/vi/oIRWIlAXnVA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZnMucGekHi6R8Dq_WPde4SLRG6w"
                     alt=""
-                    onmouseover='this.src="https://i.ytimg.com/an_webp/j7wzwALgY8A/mqdefault_6s.webp?du=3000&sqp=CIDYvJwG&rs=AOn4CLB-t0GVIBlMbbZ3tXyaVHcpzk-v-Q"'
+                    onmouseover='this.src="/img/1-1-1.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/oIRWIlAXnVA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZnMucGekHi6R8Dq_WPde4SLRG6w"'
                   />
                 </div>
@@ -325,7 +605,7 @@
               <li>
                 <!-- 	썸네일 이미지 -->
                 <div class="img"><img src="https://i.ytimg.com/vi/8OvjErl0zIE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbRR5wAnkK1F5KGtM4jjrjP4e1-A" alt=""
-                  onmouseover='this.src="https://i.ytimg.com/an_webp/8OvjErl0zIE/mqdefault_6s.webp?du=3000&sqp=CNTWvJwG&rs=AOn4CLDVaUzQ5IvffNfld8genMvpLTVc8Q"'
+                  onmouseover='this.src="/img/1-1-2.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/8OvjErl0zIE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbRR5wAnkK1F5KGtM4jjrjP4e1-A"'
                   /></div>
                 <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
@@ -364,7 +644,7 @@
               <li>
                 <!-- 	썸네일 이미지 -->
                 <div class="img"><img src="https://i.ytimg.com/vi/Vonb505nUR8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCFYQA8zrGGBzXiL93CwywLUf9sqQ" alt=""
-                  onmouseover='this.src="https://i.ytimg.com/an_webp/Vonb505nUR8/mqdefault_6s.webp?du=3000&sqp=CKXcvJwG&rs=AOn4CLA3lO6RADvMSye2fU8dLn44V542WA"'
+                  onmouseover='this.src="/img/1-1-3.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/Vonb505nUR8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCFYQA8zrGGBzXiL93CwywLUf9sqQ"'
                   /></div>
                 <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
@@ -403,7 +683,7 @@
               <li>
                 <!-- 	썸네일 이미지 -->
                 <div class="img"><img src="https://i.ytimg.com/vi/VMi7TqH7ABQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCl-KaWKMUcYdvKfeTHjwGjQDrMbQ" alt=""
-                  onmouseover='this.src="https://i.ytimg.com/an_webp/VMi7TqH7ABQ/mqdefault_6s.webp?du=3000&sqp=CLD4vJwG&rs=AOn4CLAlKYDMGzQ5GJD99vwYn6HS3XOUoQ"'
+                  onmouseover='this.src="/img/1-1-4.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/VMi7TqH7ABQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCl-KaWKMUcYdvKfeTHjwGjQDrMbQ"'
                   /></div>
                 <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
@@ -442,7 +722,7 @@
               <li>
                 <!-- 	썸네일 이미지 -->
                 <div class="img"><img src="https://i.ytimg.com/vi/TfTRv9n2Ptw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCoFtte-LIKim24TZZhuy3VkkuQoA" alt=""
-                  onmouseover='this.src="https://i.ytimg.com/an_webp/TfTRv9n2Ptw/mqdefault_6s.webp?du=3000&sqp=CPD7vJwG&rs=AOn4CLBUiAdBMoUllT4R9f7_5TAJalPDEA"'
+                  onmouseover='this.src="/img/1-1-5.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/TfTRv9n2Ptw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCoFtte-LIKim24TZZhuy3VkkuQoA"'
                   /></div>
                 <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
@@ -481,7 +761,7 @@
               <li>
                 <!-- 	썸네일 이미지 -->
                 <div class="img"><img src="https://i.ytimg.com/vi/jnyVS2LmroM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBLUccWtYZGCcBLykPmcECvc_BWKA" alt=""
-                  onmouseover='this.src="https://i.ytimg.com/an_webp/jnyVS2LmroM/mqdefault_6s.webp?du=3000&sqp=CNbtvJwG&rs=AOn4CLAHAIKXb9i5Fuhye_e5pqTNpgcTnQ"'
+                  onmouseover='this.src="/img/1-1-6.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/jnyVS2LmroM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBLUccWtYZGCcBLykPmcECvc_BWKA"'
                   /></div>
                 <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
@@ -520,7 +800,7 @@
               <li>
                 <!-- 	썸네일 이미지 -->
                 <div class="img"><img src="https://i.ytimg.com/vi/xNal-FUpk-o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3sMs9Akb_TGvLf3iIlBOvfMCTjQ" alt=""
-                  onmouseover='this.src="https://i.ytimg.com/an_webp/xNal-FUpk-o/mqdefault_6s.webp?du=3000&sqp=COr1vJwG&rs=AOn4CLBu8Z9Ma9NBJHlHpNF4XxmuB6L-Fg"'
+                  onmouseover='this.src="/img/1-1-7.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/xNal-FUpk-o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3sMs9Akb_TGvLf3iIlBOvfMCTjQ"'
                   /></div>
                 <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
@@ -559,7 +839,7 @@
               <li>
                 <!-- 	썸네일 이미지 -->
                 <div class="img"><img src="https://i.ytimg.com/vi/OlFYJAmhju4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8xIbe0Q6oeCaJ8V0VCQjcgF31vg" alt=""
-                  onmouseover='this.src="https://i.ytimg.com/an_webp/OlFYJAmhju4/mqdefault_6s.webp?du=3000&sqp=CPjlvJwG&rs=AOn4CLDzJFYblflqmYveVKE-hf28Sda9TA"'
+                  onmouseover='this.src="/img/1-1-8.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/OlFYJAmhju4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8xIbe0Q6oeCaJ8V0VCQjcgF31vg"'
                   /></div>
                 <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
@@ -598,7 +878,7 @@
               <li>
                 <!-- 	썸네일 이미지 -->
                 <div class="img"><img src="https://i.ytimg.com/vi/6Cz19hMUiDs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPvgvwD9tN5ihLOtzCUj3tvxJJJA" alt=""
-                  onmouseover='this.src="https://i.ytimg.com/an_webp/6Cz19hMUiDs/mqdefault_6s.webp?du=3000&sqp=CMfwvJwG&rs=AOn4CLBy9T5KubT5rHq357tKCFL14RNZdw"'
+                  onmouseover='this.src="/img/1-1-9.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/6Cz19hMUiDs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPvgvwD9tN5ihLOtzCUj3tvxJJJA"'
                   /></div>
                 <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
@@ -637,7 +917,7 @@
               <li>
                 <!-- 	썸네일 이미지 -->
                 <div class="img"><img src="https://i.ytimg.com/vi/_QYa3icyqgw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCkzlKz9i0gmqwZeoSbshgCegweNw" alt=""
-                  onmouseover='this.src="https://i.ytimg.com/an_webp/_QYa3icyqgw/mqdefault_6s.webp?du=3000&sqp=CODrvJwG&rs=AOn4CLDGRv78GZGGNvnMFHNZ6kLmsZqOhg"'
+                  onmouseover='this.src="/img/1-1-10.webp"'
                     onmouseout='this.src="https://i.ytimg.com/vi/_QYa3icyqgw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCkzlKz9i0gmqwZeoSbshgCegweNw"'
                   /></div>
                 <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
@@ -645,7 +925,7 @@
                   <!-- 제목, 업로드한 사람, 등등.. -->
                   <div class="info">
                     <!-- 제목칸 -->
-                    <div class="title">하도 광고가 많아서 찐리뷰 해봤습니다</div>
+                    <div class="title">vlog | 유기견 입양 그 후 | 유기견 입양 브이로그 | 아기강아지 | 포인핸드</div>
                     <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
                     <div class="nontitle">
                       <!-- 업로드한 사람 -->
@@ -657,6 +937,45 @@
                         <!-- 조회수 -->
                         <div class="views">
                           <span> 조회수 <span>45만</span>회</span>
+                        </div>
+                        <!-- 올린시간 -->
+                        <div class="uptime">
+                          <span> • </span>
+                          <span> 2주</span>
+                          <span> 전</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon"></div>
+                </div>
+              </li>
+            </div>
+            <div class="listvideo">
+              <!-- 11 -->
+              <li>
+                <!-- 	썸네일 이미지 -->
+                <div class="img"><img src="https://i.ytimg.com/vi/7GZ0MzdGxuw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdeACpB8z5M_HSc-02LPnS9DQlMg" alt=""
+                  onmouseover='this.src="/img/1-1-11.webp"'
+                    onmouseout='this.src="https://i.ytimg.com/vi/7GZ0MzdGxuw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdeACpB8z5M_HSc-02LPnS9DQlMg"'
+                  /></div>
+                <!-- 이미지옆에 제목이랑, 더보기아이콘 -->
+                <div class="infoicon">
+                  <!-- 제목, 업로드한 사람, 등등.. -->
+                  <div class="info">
+                    <!-- 제목칸 -->
+                    <div class="title">vlog | 유기견 입양 그 후 | 유기견 입양 브이로그 | 아기강아지 | 포인핸드</div>
+                    <!-- 제목칸 밑에 업로드한 사람이랑 조회수등등.. -->
+                    <div class="nontitle">
+                      <!-- 업로드한 사람 -->
+                      <div class="uploader">
+                        i'm your root 뿌리
+                        </div>
+                      <!-- 조회수, 올린시간 -->
+                      <div class="nonuploader">
+                        <!-- 조회수 -->
+                        <div class="views">
+                          <span> 조회수 <span>85만</span>회</span>
                         </div>
                         <!-- 올린시간 -->
                         <div class="uptime">

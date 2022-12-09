@@ -69,6 +69,16 @@ main {
   cursor: pointer;
 }
 
+.left > li:nth-child(2):hover {
+  background-color: #47474727;
+  padding: 0 15px;
+  border-radius: 50px;
+  font-size: 13px;
+  color: #606060;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+
 .left > li:nth-child(2) span {
   padding-top: 12px;
 }
@@ -86,8 +96,24 @@ main {
   cursor: pointer;
 }
 
+#sh:hover {
+  margin: 0 0 0 10px;
+  padding: 10px 15px 0 15px;
+  background-color: #47474727;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 .likeicon {
   background-color: #f0f0f0;
+  padding: 0 20px 0 20px;
+  border-radius: 50px 0 0 50px;
+  border-right: 1px solid #b0b0b0;
+  cursor: pointer;
+}
+
+.likeicon:hover {
+  background-color: #47474727;
   padding: 0 20px 0 20px;
   border-radius: 50px 0 0 50px;
   border-right: 1px solid #b0b0b0;
@@ -109,14 +135,28 @@ main {
   cursor: pointer;
 }
 
+.hateicon:hover {
+  background-color: #47474727;
+  padding: 0 20px 0 20px;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+}
+
 .hateicon i {
   padding: 15px 0;
 }
 
 #bu {
   width: 46px;
-  padding: 0;
   background-color: #f0f0f0;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#bu:hover {
+  width: 46px;
+  background-color: #47474727;
   border-radius: 50%;
   cursor: pointer;
   margin-left: 10px;
@@ -125,6 +165,71 @@ main {
 #bu span {
   padding: 10px 5px 0 20px;
 }
+
+.text6 {
+  font-size: 12px;
+  margin-top: 10px;
+
+  width: 48px;
+  padding: 8px;
+  color: #ffffff;
+  background-color: #000000a6;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+}
+.channel_title:hover + .text6 {
+  display: block;
+}
+
+.text7 {
+  font-size: 12px;
+  margin-top: 60px;
+
+  width: 147px;
+  padding: 8px;
+  color: #ffffff;
+  background-color: #000000a6;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+}
+.likeicon:hover + .text7 {
+  display: block;
+}
+
+.text8 {
+  font-size: 12px;
+  margin-top: 60px;
+
+  width: 185px;
+  padding: 8px;
+  color: #ffffff;
+  background-color: #000000a6;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+}
+.hateicon:hover + .text8 {
+  display: block;
+}
+
+.text9 {
+  font-size: 12px;
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 25px;
+  padding: 8px;
+  color: #ffffff;
+  background-color: #000000a6;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+}
+.share:hover + .text9 {
+  display: block;
+}
+
 /* -------------더보가------------ */
 #aaa {
   cursor: pointer;
@@ -160,8 +265,8 @@ main {
 }
 
 .cir {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   color: #ffffff;
   background-color: #018977;
@@ -171,8 +276,21 @@ main {
 .input {
   margin-left: 20px;
 }
-input {
-  width: 100%;
+
+.input > input {
+  width: 700px;
+  height: 20px;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.input > input:focus {
+  outline: none;
+  border-bottom: 2px solid #000000;
+}
+
+.cir_span {
+  padding-top: 8px;
+  padding-left: 2px;
 }
 
 #bold {
@@ -183,32 +301,220 @@ input {
   cursor: pointer;
 }
 
-/* 
-.box > summary {
-  margin: 20px 0 0 0;
-  background-color: #f0f0f0;
+.ments2 {
+  cursor: pointer;
+}
 
-  border-radius: 10px;
-  padding: 0.5rem;
+.coments {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.coments_left,
+.uploader_time {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.uploader_time2 {
+  display: flex;
+  justify-content: flex-start;
+}
+.coment {
+  /* border: 1px solid silver; */
+  width: 100%;
+}
+
+.coments_right_icon {
+  padding: 0 20px;
+}
+
+.mentpro img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.gojung,
+.uptime {
+  font-size: 12px;
+  color: #606060;
+}
+
+.gojung,
+.uploader_time,
+.that {
+  padding-left: 5px;
+}
+
+.uploader_time2 {
+  padding-left: 5px;
+}
+
+.uploader_time {
+  margin: 0 0 10px 0;
+}
+
+.gojung {
+  margin-bottom: 10px;
+}
+.ment_uploader {
+  font-size: 13px;
+  background-color: #606060;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 3px 5px;
+}
+
+.ment_uploader3 {
+  font-size: 13px;
+  font-weight: 800;
+  padding: 3px 5px;
+}
+
+.ment_uploader2 {
+  font-size: 13px;
+
+  padding: 3px 0;
+}
+
+.uptime {
+  margin-left: 5px;
+  font-size: 12px;
+  padding: 3px 2px;
+}
+
+.uptime1 {
+  font-size: 12px;
+  padding: 3px 0;
+  color: #606060;
+}
+
+.uptime2 {
+  margin-left: 5px;
+  padding: 3px 0;
+  font-size: 12px;
+  color: #606060;
+}
+
+.icon_box {
+  margin: 10px 0;
+}
+
+.icon_box2 {
+  margin: 5px 0 10px 0;
+}
+
+.icon_box #icon {
+  padding: 5px;
+}
+
+.icon_box2 #icon {
+  padding: 5px;
+}
+
+.icon_box #icon:hover {
+  background-color: #4747471b;
+  border-radius: 50%;
+  width: 8px;
+  font-size: 16px;
+}
+
+.icon_box2 #icon:hover {
+  background-color: #4747471b;
+  border-radius: 50%;
+  width: 8px;
+  font-size: 16px;
+}
+.that {
   font-size: 14px;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+}
+
+.icon_box #ko,
+.icon_box #num {
+  font-size: 12px;
+}
+.icon_box #ko {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.icon_box #ko:hover {
+  border-radius: 20px;
+
+  padding: 10px;
+  background-color: #4747471b;
+}
+
+.icon_box2 #ko,
+.icon_box2 #num {
+  font-size: 12px;
+}
+.icon_box2 #ko {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.icon_box2 #ko:hover {
+  border-radius: 20px;
+
+  padding: 10px;
+  background-color: #4747471b;
+}
+
+#aaa1 {
+  padding-left: 5px;
+}
+
+#aaa2 {
+  padding-left: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+}
+#openTerms1 {
+  padding: 0 15px;
+  flex-direction: column;
+}
+
+.mentpro2 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#openTitle1,
+#openTitle2 {
+  color: #3558d4;
+  font-size: 14px;
+  padding-left: 5px;
+  padding: 10px 15px;
   cursor: pointer;
 }
 
-.box > summary:active {
-  border-radius: 10px 10px 0 0;
+#openTitle1:hover,
+#openTitle2:hover {
+  color: #3558d4;
+  background-color: #71baff2f;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 20px;
 }
 
-.more {
-  background-color: #f0f0f0;
-
-  border-radius: 0 0 10px 10px;
-  padding: 0.5rem;
+.mentpro img,
+.mentpro2 img,
+.ment_uploader,
+.ment_uploader2,
+.ment_uploader3,
+.icon_box #icon,
+.icon_box #ko,
+.coments_right_icon {
   cursor: pointer;
-} */
+}
 
 /* list */
 
@@ -235,6 +541,9 @@ input {
   background-color: #4747471b;
 }
 
+.last {
+  padding-top: 3px;
+}
 #first {
   margin: 12px;
   background-color: #000000;
