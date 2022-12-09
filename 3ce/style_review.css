@@ -29,10 +29,95 @@ ul {
 
 /* header */
 
+.text1 {
+  margin-top: 37px;
+  margin-left: 335px;
+  width: 500px;
+  padding: 25px 20px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  position: absolute;
+  display: none;
+}
+
+.text11 {
+  margin-right: 40px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.text22 {
+  color: #7b7b7b;
+  font-size: 12px;
+  font-weight: 750;
+}
+#wn:hover + .text1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text2 {
+  margin-top: 37px;
+  margin-left: 335px;
+  width: 500px;
+  padding: 25px 20px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  position: absolute;
+  display: none;
+}
+
+.text111 {
+  margin-right: 40px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.text222 {
+  color: #7b7b7b;
+  font-size: 12px;
+  font-weight: 750;
+}
+.line {
+  border-bottom: 1px solid #7b7b7b;
+}
+#bea:hover + .text2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text3 {
+  margin-top: 37px;
+  margin-left: 335px;
+  width: 500px;
+  padding: 25px 20px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  position: absolute;
+  display: none;
+}
+
+.text1111 {
+  margin-right: 40px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.text2222 {
+  color: #7b7b7b;
+  font-size: 12px;
+  font-weight: 750;
+}
+#fa:hover + .text3 {
+  display: flex;
+  justify-content: flex-start;
+}
 .ad {
   width: 100%;
   height: 43.5px;
-  background-color: black;
 }
 .icon {
   display: flex;
